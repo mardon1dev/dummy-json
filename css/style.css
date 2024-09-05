@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900');
+
+:root {
+    --mainC: #f1f3f6;
+    --secC: #9dabc0;
+    --svgC: rgba(146, 156, 208, 0.8);
+    --sz: 250px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    background: var(--mainC);
+    font-family: 'Muli', sans-serif;
+    color: rgba(51, 51, 51, 1);
+    overflow: scroll;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: var(--sz);
+    min-height: calc(var(--sz) * 1.4);
+    background: var(--mainC);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0);
+}
+.product:hover{
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+.product img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    filter:
+    drop-shadow(
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2))
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.product button{
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+.product button:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
+.notification{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+.green{
+    border: 1px solid green;
+    color: green;
+}
+.red{
+    border: 1px solid red;
+    color: red;
+}
+
+/* Search */
+
+.search-form{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.search-form input{
+    max-width: 250px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0);
+
+}
+.search-form input:hover{
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
+
+.search-form button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: transparent;
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0);
+}
+.search-form button:hover{
+    box-shadow:
+    inset 0 0 15px rgba(55, 84, 170, 0),
+    inset 0 0 20px rgba(255, 255, 255, 0),
+    7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2);
+}
